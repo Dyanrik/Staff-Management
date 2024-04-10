@@ -1,0 +1,248 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-image: url(../BG/Staff_Management_BG-01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    overflow: auto;
+}
+.container{
+    box-shadow: 0 0 15px 0px rgba(0,0,0,.30);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    padding: 25px 20px;
+    height:510px;
+    width: 490px;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+.leftsection{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    min-width: 181px;
+}
+
+.rightsection{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    border: none;
+}
+#backbutton{
+    border: none;
+    box-shadow: 0 0 5px 0px rgba(0,0,0,.50);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #858585;
+    cursor: pointer;
+}
+#backbutton img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(264deg) brightness(104%) contrast(102%);
+}
+#backbutton:hover{
+    opacity: 50%;
+}
+
+header h2{
+    color: #0359FF;
+    width: 100%;
+}
+
+
+
+.row1, .row2, .row3, .row4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.row1{
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.row1 input{
+    border-radius: 25px;border: none;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,.20);
+    flex: 1;
+    font-size: 17px;
+    outline: none;
+    padding: 10px 15px;
+}
+.row1 input::placeholder, .row2 input::placeholder, .row3 input::placeholder, .row4 input::placeholder{
+    font-size: 15px;
+}
+.row2{
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Gender{
+    font-size: 17px;
+    outline: none;
+    width: 170px;
+    border-radius: 25px;border: none;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,.20);
+    flex: 1;
+    padding: 8px 15px;
+}
+.date-container input{
+    font-size: 17px;
+    outline: none;
+    width: 170px;
+    border-radius: 25px;border: none;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,.20);
+    flex: 1;
+    padding: 8px 15px;
+}
+#Department{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    outline: none;
+    width: 98%;
+    border-radius: 25px;border: none;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,.20);
+    flex: 1;
+    padding: 8px 15px;
+}
+
+
+.row3{
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.row3 input{
+    border-radius: 25px;border: none;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,.20);
+    flex: 1;
+    font-size: 17px;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.row4{
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.row4 input{
+    border-radius: 25px;border: none;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,.20);
+    flex: 1;
+    font-size: 17px;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.addbutton{
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.addbutton input{
+    background: #0359FF;
+    color: #FFFFFF;
+    border-radius: 25px;border: none;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,.20);
+    flex: 1;
+    font-size: 17px;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.fullnamelabel{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+    align-items: center;
+    color: #0359FF;
+    margin-bottom: -10px;
+    font-size: 17px;
+}
+
+.gblabel{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.genderlabel{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+    align-items: center;
+    color: #0359FF;
+    margin-bottom: -10px;
+    font-size: 17px;
+}
+.bdatelabel{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+    align-items: center;
+    color: #0359FF;
+    margin-bottom: -10px;
+    margin-left: 185px;
+    font-size: 17px;
+}
+.contactlabel{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+    align-items: center;
+    color: #0359FF;
+    margin-bottom: -10px;
+    font-size: 17px;
+}
+.addresslabel{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+    align-items: center;
+    color: #0359FF;
+    margin-bottom: -10px;
+    font-size: 17px;
+}
+.exp{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    align-items: center;
+    color: gray;
+    margin-bottom: -10px;
+    font-size: 10px;
+}
