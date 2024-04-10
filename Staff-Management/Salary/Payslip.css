@@ -1,0 +1,187 @@
+*{
+    font-family: 'WebFont', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    font-size: 13px;
+}
+body{
+    width: 100%;
+    overflow: hidden;
+    overflow: auto;
+    align-items: center;
+}
+@keyframes showani {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.container{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: showani .3s;
+}
+header{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight:bold;
+}
+.details{
+    align-items: center;
+    display: grid;
+    flex: 1;
+    grid-template-areas:
+    "paysliptitle paysliptitle"
+    "payrollcode staffname"
+    "startat department"
+    "workdays hide"
+    "payslipdetail payslipdetail"
+    "totalsalry totalsalry"
+    "buttons buttons";
+    justify-content: space-evenly;
+    width: 100%;
+}
+.details{
+    padding: 10px;
+    background: none;
+    border: none;
+}
+.details input{
+    outline: none;
+    padding: 10px;
+    text-align: right;
+    background: none;
+    border: none;
+    align-items: center;
+    width: 220px;
+}
+.details label{
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.paysliptitle p{
+    grid-area: paysliptitle;
+}
+.payrollcode{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: payrollcode;
+}
+.staffname{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: staffname;
+}
+.startat{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: startat;
+}
+.department{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: department;
+}
+.workdays{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: workdays;
+}
+.payslipdetail{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: payslipdetail;
+    margin-top: 25px;
+}
+table tr th{
+    height: 50px;
+}
+table tr td{
+    height: 30px;
+}
+table{
+    flex: 1;
+    font-size: 12px;
+    text-align: center;
+}
+table .totals{
+    text-align: right;
+}
+table .td2, table .td4{
+    text-align: center;
+}
+
+.totalsalry, .totalsalry h1{
+    margin: 25px 0px;
+    text-align: center;
+    font-size: 20px;
+    grid-area: totalsalry;
+}
+
+.buttons{
+    grid-area: buttons;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 25px;
+}
+.buttons input{
+    cursor: pointer;
+    display: block;
+    flex: 1;
+    border: none;
+    justify-content: space-between;
+    outline: none;
+    padding: 10px 15px;
+    margin: 0px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #0359FF;
+    font-size: 13px;
+}
+#back{
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFFFFF;
+    color: #0359FF;
+    border: #0359FF solid .1px;
+}
+@media only screen and (max-width: 550px){
+    .buttons input{
+        margin-bottom: 50px;
+    }
+}
+@media print {
+    .buttons{
+        display: none;
+    }
+}
